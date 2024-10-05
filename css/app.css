@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-title {
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  position: relative;
+  margin-top: 150px;
+  text-align: center;
+}
+
+input[type='text'] {
+  padding: 15px;
+  width: 300px;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  background-color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 182, 0.5);
+}
+
+button {
+  padding: 15px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.label {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#errorMessage,
+#successMessage {
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+#errorMessage.show {
+  display: flex;
+  background-color: #ffcccb;
+  color: #d8000c;
+}
+
+#successMessage.show {
+  display: flex;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.weather-card {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  width: 320px;
+}
+
+#removeBtn {
+  margin: 15px auto;
+  display: none;
+  background-color: #dc3545;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+#removeBtn:hover {
+  background-color: #c82333;
+}
