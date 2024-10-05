@@ -1,5 +1,5 @@
 # Weather Application
-It was made with the open API: open-meteo.com, geocode.maps.co
+It was created using the open APIs: open-meteo.com and geocode.maps.co
 > Demo Link: https://babashov-weather-app.netlify.app/
 
 
